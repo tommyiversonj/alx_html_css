@@ -36,7 +36,7 @@ body {
   align-items: center;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -171,7 +171,7 @@ body {
   height: auto;
   border-radius: 50%;
   aspect-ratio: 1 / 1;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -209,7 +209,7 @@ body {
   height: auto;
   border-radius: 50%;
   aspect-ratio: 1 / 1;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -282,12 +282,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px 0; /* Padding top, sides. No bottom padding for tight fit with title */
-  min-height: 50px; /* Ensure consistent header height */
+  padding: 15px 20px 0;
+  /* Padding top, sides. No bottom padding for tight fit with title */
+  min-height: 50px;
+  /* Ensure consistent header height */
 }
 
-.video-title-header { /* This will be the actual title at the top left */
-  font-size: 16px; /* Matches screenshot */
+.video-title-header {
+  /* This will be the actual title at the top left */
+  font-size: 16px;
+  /* Matches screenshot */
   font-weight: 600;
   color: #071629;
 }
@@ -481,7 +485,16 @@ body {
 
 .footer-logo img {
   height: 40px;
-  filter: brightness(0) invert(1);
+  width: auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0px;
+  background-color: transparent;
+
 }
 
 .social-links {
