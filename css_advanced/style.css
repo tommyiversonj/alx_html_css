@@ -259,18 +259,37 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .video-card {
   background: white;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
 }
 
 .video-card:hover {
   transform: translateY(-5px);
+}
+
+.video-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px 0; /* Padding top, sides. No bottom padding for tight fit with title */
+  min-height: 50px; /* Ensure consistent header height */
+}
+
+.video-title-header { /* This will be the actual title at the top left */
+  font-size: 16px; /* Matches screenshot */
+  font-weight: 600;
+  color: #071629;
 }
 
 .video-thumbnail {
@@ -289,7 +308,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 64px;
+  width: px;
   height: 64px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
@@ -299,7 +318,6 @@ body {
   font-size: 20px;
   color: #c271ff;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .play-button:hover {
